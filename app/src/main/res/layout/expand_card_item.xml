@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal"
+            android:id="@+id/lay1"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardview_image"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/pro_img" />
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/cardview_list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18sp"
+                    android:layout_toRightOf="@+id/cardview_image"
+                    android:paddingBottom="5dp"
+                    android:textColor="#6f6f6f"
+                    android:text="Attaullah Khizar"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/short_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_below="@+id/cardview_list_title"
+                    android:layout_toRightOf="@+id/cardview_image"
+                    android:textColor="#8b8b8b" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/img_call"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@drawable/ic_call"/>
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_call"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="02sp"
+                    android:src="@drawable/ic_msg"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_below="@+id/lay1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/quantum_grey"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay2"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/edit_text_color"
+
+                    android:text="Distance"/>
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/km"
+                    android:layout_below="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#6f6f6f"
+                    android:textSize="17sp"
+                    android:text="2 km"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:background="@color/quantum_grey" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/edit_text_color"
+                    android:text="Time"/>
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/time_digit"
+                    android:layout_below="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#6f6f6f"
+                    android:textSize="17sp"
+                    android:text="12 mins"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

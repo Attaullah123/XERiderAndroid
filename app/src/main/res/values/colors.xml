@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c74af</color>
+    <color name="colorPrimaryDark">#205FA2</color>
+    <color name="colorAccent">#3c74af</color>
+
+    <color name="edit_text_color">#545d5f</color>
+
+    <color name="screen_backround">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="color_black">#000000</color>
+    <color name="tab_unselected_color">#B4AFAF</color>
+    <color name="ratingbar_color">#B6A405</color>
+    <color name="ratingbar_normal">#C9C5C5</color>
+
+</resources>

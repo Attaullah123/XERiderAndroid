@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardElevation="1dp">
+
+        <RelativeLayout
+            android:id="@+id/lay_list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            >
+
+            <ImageView
+                android:id="@+id/type1_img"
+                android:layout_width="35sp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menue_llipse"/>
+
+            <com.sygn.xeapp.customview.MyTextView
+                android:id="@+id/type1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/type1_img"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="10sp"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+            <com.sygn.xeapp.customview.MyTextView
+                android:id="@+id/type1_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Payment method"
+                android:layout_toRightOf="@+id/type1_img"
+                android:layout_below="@id/type1_text"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <com.sygn.xeapp.customview.MyTextView
+                android:id="@+id/typ1_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="@color/color_black"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5sp"/>
+
+
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            card_view:cardElevation="1dp">
+
+            <RelativeLayout
+                android:id="@+id/lay_list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                >
+
+                <ImageView
+                    android:id="@+id/type2_img"
+                    android:layout_width="35sp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                   android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menue_llipse"/>
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/type2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Credit Card"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/type2_img"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+
+                    android:textSize="16sp"
+                    android:textColor="#000"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            card_view:cardElevation="1dp">
+
+            <RelativeLayout
+                android:id="@+id/lay_list3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                >
+
+                <ImageView
+                    android:id="@+id/type3_img"
+                    android:layout_width="35sp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menue_llipse"/>
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/type3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coupon"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/type3_img"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:textSize="16sp"
+                    android:textColor="#000"/>
+
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:id="@+id/typ3_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginLeft="5sp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

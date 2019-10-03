@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:src="@drawable/logo_login"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="18dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_name"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <com.sygn.xeapp.customview.MyEditText
+            android:id="@+id/sign_editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:hint="Enter number e.g: 00923..."
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/edit_text_color"
+            android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <com.sygn.xeapp.customview.MyEditText
+            android:id="@+id/sign_editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColor="@color/edit_text_color"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="250dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="13sp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.sygn.xeapp.customview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3sp"
+            android:text="OR"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/fb_login"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity ="center"
+                    android:src="@drawable/fb_back"/>
+
+                <ImageView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/fb_login"
+                    android:layout_alignTop="@id/fb_login"
+                    android:layout_alignRight="@id/fb_login"
+                    android:layout_alignBottom="@id/fb_login"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/facebook_name"
+                    android:gravity="center" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                >
+
+                <ImageView
+                    android:id="@+id/gmail_signup"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity ="center"
+                    android:src="@drawable/gmail_back"/>
+
+                <ImageView
+                    android:id="@+id/gmail_signin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/gmail_signup"
+                    android:layout_alignTop="@id/gmail_signup"
+                    android:layout_alignRight="@id/gmail_signup"
+                    android:layout_alignBottom="@id/gmail_signup"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/gmail_name"
+                    android:gravity="center" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.sygn.xeapp.customview.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:textColor="@color/edit_text_color"
+            android:text="Forget Password?"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+            <com.sygn.xeapp.customview.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/edit_text_color"
+                android:textSize="15sp"
+                android:text="Don't have an account?"/>
+            <com.sygn.xeapp.customview.MyTextView
+                android:id="@+id/txt_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/edit_text_color"
+                android:textSize="15sp"
+                android:text="Sign Up Now"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</ScrollView>

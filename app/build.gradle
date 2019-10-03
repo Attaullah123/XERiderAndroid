@@ -1,0 +1,82 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+
+repositories {
+    maven { url 'https://maven.google.com' }
+    mavenCentral()
+}
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.sygn.xeapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+
+        manifestPlaceholders = [
+                onesignal_app_id : 'a2c4d767-df36-4f8d-a49a-e5ee2f8e0d8f',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        useLibrary 'org.apache.http.legacy'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android{
+        configurations {
+            all*.exclude group: 'com.android.volley'
+        }}
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation 'com.google.firebase:firebase-auth:19.0.0'
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.onesignal:OneSignal:[3.11.2, 3.99.99]'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    compile 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

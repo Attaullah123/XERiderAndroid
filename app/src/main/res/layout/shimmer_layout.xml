@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8sp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="8sp">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--<com.sygn.xeapp.customview.RoundedImageView-->
+        <!--android:id="@+id/main_menu_image"-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--app:civ_border_color="@color/colorPrimary"-->
+        <!--app:srcCompat="@drawable/bike_ic"/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_menu_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary" />
+
+        <com.sygn.xeapp.customview.MyTextView
+            android:id="@+id/main_menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#464040"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="Xe Rider"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="#ACA0A0"/>
+</LinearLayout>

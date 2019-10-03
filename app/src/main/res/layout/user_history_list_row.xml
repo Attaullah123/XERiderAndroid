@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="7sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="5.8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13sp"
+                android:layout_marginRight="13sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i1"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gps_icon"/>
+
+                    <com.sygn.xeapp.customview.MyTextView
+                        android:id="@+id/trip_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Model Town Link Road Lahore"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#9a9a9a"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i2"
+                        android:layout_marginLeft="9.5dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1sp"
+                        android:layout_width="4dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/dot_shape"
+                        android:layerType="software"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i3"
+                        android:layout_width="22dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/loc_icon"
+                        />
+
+                    <com.sygn.xeapp.customview.MyTextView
+                        android:id="@+id/trip_des_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Y-block, Phase 5, DHA, Lahore"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#646262"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:tint="#CFCACA"
+                    android:src="@drawable/line"/>
+
+
+                <LinearLayout
+                    android:id="@+id/bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/clock_ic2"/>
+                    <com.sygn.xeapp.customview.MyTextView
+                        android:id="@+id/trip_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#6f6f6f"
+                        android:text="07:30 pm"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+
+                        android:tint="#4B4848"
+                        android:src="@drawable/ver_line"/>
+
+                    <ImageView
+                        android:layout_width="23sp"
+                        android:layout_height="20sp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/notes_ic"/>
+                    <com.sygn.xeapp.customview.MyTextView
+                        android:id="@+id/trip_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#6f6f6f"
+                        android:text="Rs 250"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:tint="#4B4848"
+                        android:src="@drawable/ver_line"/>
+
+                    <ImageView
+                        android:id="@+id/trip_status_ic"
+                        android:layout_width="18sp"
+                        android:layout_height="18sp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/checked_ic"/>
+                    <com.sygn.xeapp.customview.MyTextView
+                        android:id="@+id/trip_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#5dba37"
+                        android:text="Completed"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

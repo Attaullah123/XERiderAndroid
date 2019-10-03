@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716821589089",
+    "firebase_url": "https://xerider-ad181.firebaseio.com",
+    "project_id": "xerider-ad181",
+    "storage_bucket": "xerider-ad181.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716821589089:android:61de0d66a7413838",
+        "android_client_info": {
+          "package_name": "com.sygn.xeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716821589089-gsntvvsjfnenb04nchpchuknnedlrki5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMx8KQ7gWC0Sm2DP497boIGZv1Ty5Xy00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716821589089-gsntvvsjfnenb04nchpchuknnedlrki5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f2f4f8"
+    android:tag="cards main container">
+
+    <include
+        android:id="@+id/toolbar_payment"
+        layout="@layout/toolbar_other_screen" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        card_view:cardBackgroundColor="#ffffff"
+        android:layout_marginTop="15dp"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:padding="11dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="end"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_marginRight="3dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_width="50sp"
+                   android:layout_height="38sp"
+                   android:src="@drawable/card_visa"/>
+               <ImageView
+                   android:layout_marginRight="3dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_width="50sp"
+                   android:layout_height="38sp"
+                   android:src="@drawable/card_discover"/>
+               <ImageView
+                   android:layout_marginRight="3dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_width="50sp"
+                   android:layout_height="38sp"
+                   android:src="@drawable/card_amercan"/>
+               <ImageView
+                   android:layout_marginRight="12dp"
+                   android:layout_marginLeft="3dp"
+                   android:layout_width="50sp"
+                   android:layout_height="38sp"
+                   android:src="@drawable/card_visa"/>
+
+           </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.sygn.xeapp.customview.MyEditText
+                    android:id="@+id/pay_cardnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="Card Number"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp"
+
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.sygn.xeapp.customview.MyEditText
+                    android:id="@+id/pay_monthyear"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="MM/YY"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.sygn.xeapp.customview.MyEditText
+                    android:id="@+id/pay_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="CVV"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/pay_countryregion"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="Country/Region"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp"
+                    android:inputType="textAutoCorrect" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/pay_zipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="Zip Code"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.sygn.xeapp.customfonts.MyTextView_Roboto_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="19.3dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="18.1dp"
+                android:background="@drawable/rect_blue"
+                android:gravity="center"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

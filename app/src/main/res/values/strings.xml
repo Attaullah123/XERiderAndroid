@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XERider</string>
+    <string name="web_client">abcc</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="package_text">Select one the packages for your daily pick and drop\nand drop and save your month</string>
+    <string name="google_maps_key">AIzaSyA8cuo-SKDhf6sKDbRKhAPyVyR-OtDxbgQ</string>
+    <string name="help_popup">Your feedback will help us improve\nour services</string>
+</resources>

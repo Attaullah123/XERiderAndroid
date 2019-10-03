@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/card_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="0dp"
+            card_view:cardUseCompatPadding="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="24dp">
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammad Ali"
+                    android:textColor="@color/color_black"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"/>
+
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Xe-Mini| LEA - 203"
+                    android:textSize="16sp"/>
+
+                <com.sygn.xeapp.customview.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="How was your trip?"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"/>
+                <com.sygn.xeapp.customview.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/help_popup"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/quantum_grey"
+                    android:textSize="14sp"/>
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/RatingBar"
+                    android:layout_marginTop="10sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="Type your views"
+                    android:textColor="@color/quantum_grey"
+                    android:padding="5dip"
+
+                    android:layout_height="95sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.sygn.xeapp.utility.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/pro_img"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

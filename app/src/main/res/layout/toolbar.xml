@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:id="@+id/bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XE Ride"
+        android:textColor="#FAF6F6"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+</androidx.appcompat.widget.Toolbar>
